@@ -82,31 +82,31 @@ Console.WriteLine(expr.Substitute(Variable.T, Expression.OneHalf).Simplify()); /
 
 The abstract base class for all mathematical expressions. Implements `IEquatable<Expression>`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.One</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.One</code>*
 
 Represents the integral value `1`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.Zero</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.Zero</code>*
 
 Represents the integral value `0`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.NegativeOne</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.NegativeOne</code>*
 
 Represents the integral value `-1`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.OneHalf</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.OneHalf</code>*
 
 Represents the rational value `1/2`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.PI</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.PI</code>*
 
 Represents the transcendental value `π`.
 
-##### *<code>[ValueExpression](./algebra_library.md#ValueExpression) Expression.E</code>*
+##### *<code>[ValueExpression](./algebra_library.md#valueexpression) Expression.E</code>*
 
 Represents the transcendental value `e`.
 
-##### *<code>[Expression](./algebra_library.md#Expression) Expression.Undefined</code>*
+##### *<code>[Expression](./algebra_library.md#expression) Expression.Undefined</code>*
 
 Represents an undefined expression.
 
@@ -122,27 +122,27 @@ Returns the LaTeX markup that represents this expression.
 
 Returns a string representation of this expression in a heirarchical view.
 
-##### *<code>[Expression](./algebra_library.m#Expression) Simplify([SimplificationStrategy](./algebra_library.md#SimplificationStrategy) strat = SimplificationStrategy.Default)</code>*
+##### *<code>[Expression](./algebra_library.m#expression) Simplify([SimplificationStrategy](./algebra_library.md#simplificationstrategy) strat = SimplificationStrategy.Default)</code>*
 
-Simplifies this expression using the requested *[`SimplificationStrategy`]()*. See *[`SimplificationStrategy`]()* for more details on what each strategy accomplishes.
+Simplifies this expression using the requested *[`SimplificationStrategy`](./algebra_library.md#simplificationstrategy)*. See *[`SimplificationStrategy`](./algebra_library.md#simplificationstrategy)* for more details on what each strategy accomplishes.
 
-#### *<code>[PowerExpression](./algebra_library.md#PowerExpression) Square()</code>*
+#### *<code>[PowerExpression](./algebra_library.md#powerexpression) Square()</code>*
 
 Returns the square of this expression (this expression raised to the power of two).
 
-#### *<code>[PowerExpression](./algebra_library.md#PowerExpression) Sqrt()</code>*
+#### *<code>[PowerExpression](./algebra_library.md#powerexpression) Sqrt()</code>*
 
 Returns the square root of this expression.
 
-#### *<code>[PowerExpression](./algebra_library.md#PowerExpression) Cube()</code>*
+#### *<code>[PowerExpression](./algebra_library.md#powerexpression) Cube()</code>*
 
 Returns the cube of this expression (this expression raised to the power of three).
 
-#### *<code>[PowerExpression](./algebra_library.md#PowerExpression) Cbrt()</code>*
+#### *<code>[PowerExpression](./algebra_library.md#powerexpression) Cbrt()</code>*
 
 Returns the cube root of this expression.
 
-#### *<code>[PolynomialExpression](./algebra_library.md#PolynomialExpression) ToPolynomial()</code>*
+#### *<code>[PolynomialExpression](./algebra_library.md#polynomialexpression) ToPolynomial()</code>*
 
 Attempts to convert this expression to a *[`PolynomialExpression`](./algebra_library.md#polynomialexpression)*. May throw an *`ArgumentException`* on failure (if the expression could not be interpreted as a polynomial).
 
